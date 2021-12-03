@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rafael H. Pereira - Portifólio</title>
+  <link rel="icon" href="imgs/icon-site.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8abed3b51a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <script>
+  buscarRepositorios();
+  buscarRepositorios1();
+  detalhesGit();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+  <header class="header">
+    <nav class="menunav">
+      <ul class="menu">
+        <li class="links"> <a id="perfil" target="_blank">PERFIL</a> </li>
+        <li class="links"> <a id="maisProjetos" target="_blank">PROJETOS</a> </li>
+        <li class="links"> <a id="todosRepositorios" target="_blank">REPOSITÓRIOS GITHUB</a> </li>
+        <li class="links"> <a href="conteudos.html" target="_blank">CONTEÚDO</a> </li>
+        <div id="input_container">
+          <li>
+            <form>
+            <input type="search" class="pesquisar" id="pesquisar" placeholder="Pesquisar">
+            <img src="imgs/search.png" alt="iconepesquisa" id="input_img">
+          </form>
+          </li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <nav class="navbar navbar-light" style="background-color: rgba(211, 211, 211, 0.616)" id="navmobile">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Portfólio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="menu">
+            <li class="links"> <a id="perfil" target="_blank">PERFIL</a> </li>
+            <li class="links"> <a id="maisProjetos" target="_blank">PROJETOS</a> </li>
+            <li class="links"> <a id="todosRepositorios" target="_blank">REPOSITÓRIOS GITHUB</a> </li>
+            <li class="links"> <a href="conteudos.html" target="_blank">CONTEÚDO</a> </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Pesquisar"  id="pesquisar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="resultado">
+
+
+
+  </div>
+  <section class="perfil" id="perfil">
+    <div class="infosPerfil">
+      <img class="imgperfil" id="imgperfil" align="left">
+      <aside>
+        <a id="nomeGit" target="_blank"><h2 class="nomeperfil" id="nomeperfil"></h2></a>
+        <p class="bio" id="bio"></p>
+        <a id="urlSeguidores" target="_blank"><p id="seguidores"></p></a>
+      </aside>
+
+      <div class="divredes">
+        <h2 class="redes">Redes sociais:</h2>
+        <div class="divIcones">
+        <a target="_blank" class="social-icon" data-tooltip="email@gmail.com"
+          href="mailto:rafael.pereira.1363258@sga.pucminas.br"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a target="_blank" class="social-icon" data-tooltip="Facebook"
+          href="https://www.facebook.com/rafael.pereira.9849912/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a target="_blank" class="social-icon" data-tooltip="Instagram" href="https://instagram.com/_raffp"><i
+            class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <h1 class="projetos">Projetos</h1>
+
+  <ul class="imagens">
+    <li>
+      <a target="_blank" href="https://cxxlt.github.io/login/"> <img src="imgs/sistemalogin.png" alt="1"></a>
+      <p>Sistema de login e registro - 2021.</p>
+    </li>
+    <li>
+      <a target="_blank" href="https://cxxlt.github.io/links/"><img src="imgs/links.png" alt="2"></a>
+      <p>Links e contato - 2021.</p>
+    </li>
+    <li>
+     <a target="_blank" href="https://reciclepuc.000webhostapp.com/"><img src="imgs/recicle.png" alt="3"></a> 
+      <p>Recicle.com - 2021.</p>
+    </li>
+    <li>
+      <img src="imgs/embreve.png" alt="4">
+      <p>Projeto D - 2021.</p>
+    </li>
+  </ul>
+  <a class="maisproj" id="maisProjetos" target="_blank"><i class="bi bi-plus-lg" id="plus"></i>Carregar mais projetos</a>
+
+  
+  <section class="repgithub" id="repositoriosGit">
+    <h1 class="gittitle">Repositórios GitHub</h1>
+    <ul class="ulgit">
+      <li class="lirep">
+        <img id="iconearquivo" align="left" src="imgs/icon-file.svg">
+        <a id="linkRepositorio1" target="_blank" style="text-decoration: none; color: #000;"><h2 class="reposits" id="nomeRepositorio1"></h2></a>
+        <p class="pgit" id="descricaoRepositorio1"></p>
+        <p class="pgit" id="repositorioAtualizadoEm1"></p>
+      </li>
+      <li class="lirep">
+        <img id="iconearquivo" align="left" src="imgs/icon-file.svg">
+        <a id="linkRepositorio2" target="_blank" style="text-decoration: none; color: #000;"><h2 class="reposits" id="nomeRepositorio2"></h2></a>
+        <p class="pgit" id="descricaoRepositorio2"></p>
+        <p class="pgit" id="repositorioAtualizadoEm2"></p>
+      </li>
+
+      <li class="lirep">
+        <img id="iconearquivo" align="left" src="imgs/icon-file.svg">
+         <a id="linkRepositorio" target="_blank" style="text-decoration: none; color: #000;"><h2 class="reposits" id="nomeRepositorio"></h2></a>
+        <p class="pgit" id="descricaoRepositorio"></p>
+        <p class="pgit" id="repositorioAtualizadoEm"></p>
+      </li>
+
+    </ul>
+    <a class="maisrep" id="todosRepositorios"><i class="bi bi-plus-lg" id="plus"></i>Carregar mais repositórios</a>
+  </section>
+  
+
+  <section class="recomendacoes">
+    <h1 class="recotitle">Recomendações de Conteúdo</h1>
+    <ul class="ulrec">
+      <li class="lirec">
+        <iframe width="426" height="240" src="https://www.youtube.com/embed/f02mOEt11OQ" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <p class="prep">Vídeo: Code-fi / lofi beats to code/relax to.</p>
+        <p class="prep">Criador: The AMP Channel.</p>
+        <p class="prep">Estreia: 2020.</p>
+      </li>
+
+      <li class="lirec">
+        <iframe width="426" height="240" src="https://www.youtube.com/embed/2alg7MQ6_sI" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <p class="prep">Vídeo: Como usar Git e Github na prática</p>
+        <p class="prep">Criador: Mayk Brito - Rocketseat.</p>
+        <p class="prep">Estreia: 2019.</p>
+      </li>
+
+      <li class="lirec3">
+        <iframe width="426" height="240" src="https://www.youtube.com/embed/jtzBhKkUKXs" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <p class="prep">Vídeo: O Princípio Que todo Programador Precisa Conhecer.</p>
+        <p class="prep">Criador: Filipe Deschamps.</p>
+        <p class="prep">Estreia: 2021.</p>
+      </li>
+    </ul>
+    <a class="maisrep" href="conteudos.html"><i class="bi bi-plus-lg" id="plus"></i>Carregar mais recomendações</a>
+  </section>
+
+  <hr>
+
+
+  <footer class="footer">
+    <h3>Copyright 2021 - Disciplina de Desenvolvimento de Interfaces Web - ICEI PUC Minas - Rafael Henrique Pereira
+    </h3>
+  </footer>
+</body>
+
+</html>

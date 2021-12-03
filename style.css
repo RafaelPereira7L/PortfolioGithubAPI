@@ -1,0 +1,619 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(219,218,236,1) 100%);
+    width: 100%;
+}
+
+
+body, ul, li {
+    margin: 10px;
+    padding: 0px;
+    font-size: 1.2rem;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background: rgb(17, 130, 158);
+    border-radius: 5px;
+  }
+
+.header {
+    background-color: rgba(211, 211, 211, 0.616);
+    display: flex;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 5px 4px 25px;
+}
+.footer {
+    background-color: lightgray;
+    padding: 40px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.footer h3 {
+    text-align: center;
+    margin: 0px 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    font-size: large;
+}
+
+
+nav ul li {
+    list-style: none;
+    margin-left: 20px;
+    font-weight: bolder;
+}
+
+.links {
+    transition: all .2s ease-in-out;
+}
+
+.links:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.links:hover {
+    color:rgb(10, 10, 255);
+}
+
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.menunav {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+#input_container {
+    position:relative;
+    padding:0 0 0 20px;
+    margin:0 20px;
+    align-items: center;
+    width: 200px;
+    bottom: 6px;
+}
+
+
+.pesquisar {
+    float: left;
+    margin-left: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 2%;
+    text-align: center;
+    font-size: 16px;
+    transition: ease-in-out 0.2s;
+}
+.pesquisar:focus {
+    box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 0px;
+    outline: none;
+}
+#input_img {
+    position:absolute;
+    bottom:10px;
+    float: left;
+    width:12px;
+    right: -15px;
+    height:12px;
+    pointer-events: none;
+    transition: ease-in-out 0.2s;
+}
+
+[type="search"]:focus ~ #input_img {
+    opacity: 0%;
+}
+
+.pesquisar::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+    -webkit-user-modify: read-write;
+    content:url(imgs/x.svg);
+    width: 25px;
+}
+
+.nomeUsuario {
+    display: inline;
+    margin-left: 10px;
+    color:rgb(10, 96, 255);
+    font-weight: bold;
+}
+.infosUsuario {
+    display: block;
+    margin-top: 5px;
+    margin-left: 5px;
+    line-height: 10px;
+}
+
+#avatarResultado {
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.linkPerfil {
+    text-decoration: none;
+}
+
+.projetos {
+    font-size: 160%;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+p {
+    font-size: large;
+}
+
+.imagens {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+.imagens li {
+    margin-left: 40px;
+}
+
+.imagens img {
+    border-radius: 10px;
+}
+
+
+.perfil {
+    display: flex;
+    margin-top: 2%;
+    margin-left: 10%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.imgperfil {
+    max-width: 40%;
+    display: block;
+    align-items: center;
+    padding: 2%;
+    margin-left: 30%;
+    margin-right: 10px;
+}
+
+.nomeperfil {
+    font-weight: bolder;
+    margin-top:4%;
+    margin-left: 70%;
+    width: 90%;
+}
+
+.bio {
+    display: block;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 70%;
+    text-align: initial;
+}
+
+#urlSeguidores {
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    transition: ease-in-out 0.3s;
+}
+
+#urlSeguidores:hover {
+    text-decoration: none;
+    color:rgb(10, 10, 255);
+
+}
+
+#seguidores {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.redes {
+    color:rgb(10, 10, 255);
+    margin-left: 70%;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.social-icon {
+    display: inline-block;
+    text-align: center;
+    width: 35px;
+    margin-left: 6px;
+    justify-content: space-between;
+    border-radius: 20%;
+    transition: all .1s ease-in-out;
+    text-decoration: none;
+    font-size: 120%;
+    background-color: lightgray;
+    color: #ffffff;
+}
+
+.social-icon:hover {
+    background-color: rgb(10, 10, 255);
+    color: #ffffff;
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 1);
+}
+
+.social-icon:active {
+    transform: scale(0.9, 0.9);
+}
+
+
+a.maisproj {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    max-width:fit-content;
+    padding: 5px;
+    background-color: lightgray;
+    color: black;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-decoration:none;
+    font-weight: bold;
+    text-align: center;
+    transition: ease-in-out 0.2s;
+    margin-left: 80%;
+    margin-bottom: 5%;
+}
+#plus {
+    transform: scale(0.6, 0.6);
+    margin: 4px;
+}
+
+a.maisproj:hover {
+    background-color: rgb(100, 100, 255);
+    color: #ffffff;
+    font-weight: bolder;
+    box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 0px;
+}
+
+a.maisproj:active {
+    transform: scale(0.9, 0.9);
+}
+
+a.maisexp {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width:fit-content;
+    padding: 5px;
+    background-color: lightgray;
+    color: black;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-decoration:none;
+    font-weight: bold;
+    text-align: center;
+    transition: ease-in-out 0.2s;
+    margin-left: 80%;
+    margin-bottom: 5%;
+}
+
+a.maisexp:hover {
+    background-color: rgb(100, 100, 255);
+    color: #ffffff;
+    font-weight: bolder;
+    box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 0px;
+}
+
+a.maisexp:active {
+    transform: scale(0.9, 0.9);
+}
+
+
+@keyframes opacidade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  
+h2 {  
+    animation: 1s ease-out 0s 1 opacidade;
+}
+
+.repgithub {
+    padding-top: 100px;
+    background: linear-gradient(180deg, rgba(200, 200, 200, 0.8) 0%, rgba(200, 200, 200, 0.2) 100%);
+    box-shadow: rgba(0, 0, 0, 0.2) 5px 4px 25px;
+}
+
+.gittitle {
+    text-align: center;
+    font-size: 250%;
+    font-weight:bolder;
+    color: rgb(17, 17, 49);
+}
+
+.ulgit {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2%;
+}
+
+
+#iconearquivo {
+    width: 40px;
+    display: inline-flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+.reposits {
+    font-weight: bold;
+    text-align:left;
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.pgit {
+    max-width: 400px;
+    text-align: justify;
+}
+
+a.maisrep {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width:fit-content;
+    padding: 5px;
+    background-color: lightgray;
+    color: black;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-decoration:none;
+    font-weight: bold;
+    text-align: center;
+    transition: ease-in-out 0.2s;
+    margin: 0px 0px 95px 1450px
+}
+
+a.maisrep:hover {
+    background-color: rgb(100, 100, 255);
+    color: #ffffff;
+    font-weight: bolder;
+    box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 0px;
+}
+
+a.maisrep:active {
+    transform: scale(0.9, 0.9);
+}
+
+.recomendacoes {
+    padding-top: 100px;
+}
+
+.recotitle {
+    text-align: center;
+    font-size: 250%;
+    font-weight:bolder;
+    color: rgb(17, 17, 49);
+    margin-bottom: 60px;
+}
+
+.ulrec {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+iframe {
+    max-width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.5) 3px 2px 10px;
+}
+
+.prep {
+    margin-top: 20px;
+    line-height: 40%;
+    font-weight: 600;
+}
+#navmobile {
+    display: none;
+}
+
+#nomeGit {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (min-width: 300px) and (max-width: 1024px) {
+
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .pesquisar {
+        display: none;
+    }
+    #input_img {
+        display: none;
+    }
+    .menunav {
+        justify-content: space-evenly;
+    }
+
+    .links {
+        font-size: medium;
+        font-weight: 300;
+    }
+
+    .perfil {
+        width: 95%;
+    }
+    
+
+    .imgperfil {
+        max-width: 40%;
+        margin-left: -40px;
+        margin-right: 0%;
+    }
+
+    #seguidores {
+        font-size: 14px;
+    }
+
+    .nomeperfil {
+        font-size:16px;
+        margin-left: 35%;
+        text-align: start;
+    }
+
+    .bio {
+        width: 95%;
+        font-size:14px;
+        margin-left: -10px;
+        margin-bottom: 5px;
+    }
+
+    .redes {
+        margin:0%;
+        margin-left: 26%;
+        font-size: 15px;
+    }
+    .social-icon {
+        margin-top: 10px;
+        margin-left: 6%;
+    }
+
+    .divIcones {
+        margin-left: 15%;
+    }
+    .lirec3 {
+        width: 90%;
+    }
+
+    .prep {
+        line-height: 100%;
+    }
+
+    .menunav {
+        display: none;
+    }
+    #navmobile {
+        display: block;
+        font-weight:bold;
+    }
+    .header {
+        margin-bottom: 0px;
+    }
+
+    a.maisproj {
+        margin: 0px 0px 40px 14px;
+    }
+
+
+    a.maisrep {
+        margin: 0px 0px 5px 14px;
+    }
+
+    .imagens {
+        padding-left: 0%;
+    }
+
+    .exp {
+        margin-bottom: 0%;
+    }
+
+    .cargo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cargolegenda {
+        max-height: 0%;
+    }
+
+    .gittitle {
+        font-size: 200%;
+    }
+
+    .ulrec {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-left: 0%;
+    }
+
+
+}
+
+@media screen and (min-device-width: 768px){
+
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        overflow-x: hidden;
+    
+    }
+
+
+
+
+}
