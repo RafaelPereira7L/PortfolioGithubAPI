@@ -28,11 +28,7 @@ body, ul, li {
   }
   
 ::-webkit-scrollbar-thumb {
-<<<<<<< HEAD
-    background: rgb(17, 130, 158);
-=======
     background: rgb(180 210 227);
->>>>>>> bc1e251 (commit)
     border-radius: 5px;
   }
 
@@ -187,13 +183,6 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-<<<<<<< HEAD
-    align-items: center;
-    max-width: 100%;
-}
-.imagens li {
-    margin-left: 40px;
-=======
     max-width: 100%;
     max-height: auto;
     padding-left: 0;
@@ -202,21 +191,17 @@ p {
 .imagens li {
     margin-left: 40px;
     
->>>>>>> bc1e251 (commit)
 }
 
 .imagens img {
     border-radius: 10px;
 }
 
-<<<<<<< HEAD
-=======
 .pProjetos {
     max-width: fit-content;
     overflow-wrap: break-word;
 }
 
->>>>>>> bc1e251 (commit)
 
 .perfil {
     display: flex;
@@ -405,8 +390,6 @@ h2 {
     margin: 2%;
 }
 
-<<<<<<< HEAD
-=======
 #voltar-topo {
     position: fixed;
     bottom: 50px;
@@ -422,7 +405,6 @@ h2 {
     width: 30px;
     height: 30px;    
 }
->>>>>>> bc1e251 (commit)
 
 #iconearquivo {
     width: 40px;
