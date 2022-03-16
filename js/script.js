@@ -17,11 +17,11 @@ function buscarRepositorios() {
     fetch(`https://api.github.com/users/${usuario}/repos`)
         .then(response => response.json().then(detalhes => {
             console.log(detalhes)
-            document.getElementById('nomeRepositorio').innerHTML = detalhes[0].name;
-            document.getElementById('descricaoRepositorio').innerHTML = 'Descrição: ' + detalhes[0].description;
-            document.getElementById('repositorioAtualizadoEm').innerHTML = 'Atualizado em: ' + detalhes[0].updated_at;
+            document.getElementById('nomeRepositorio').innerHTML = detalhes[2].name;
+            document.getElementById('descricaoRepositorio').innerHTML = 'Descrição: ' + detalhes[2].description;
+            document.getElementById('repositorioAtualizadoEm').innerHTML = 'Atualizado em: ' + detalhes[2].updated_at;
             var urlRepositorio = document.getElementById('linkRepositorio');
-            urlRepositorio.href = `${detalhes[0].html_url}`;
+            urlRepositorio.href = `${detalhes[2].html_url}`;
         }))
 
 
@@ -38,11 +38,11 @@ function buscarRepositorios() {
     fetch(`https://api.github.com/users/${usuario}/repos`)
     .then(response => response.json().then(detalhes => {
         console.log(detalhes)
-        document.getElementById('nomeRepositorio1').innerHTML = detalhes[4].name;
-        document.getElementById('descricaoRepositorio1').innerHTML = 'Descrição: ' + detalhes[4].description;
-        document.getElementById('repositorioAtualizadoEm1').innerHTML = 'Atualizado em: ' + detalhes[4].updated_at;
+        document.getElementById('nomeRepositorio1').innerHTML = detalhes[6].name;
+        document.getElementById('descricaoRepositorio1').innerHTML = 'Descrição: ' + detalhes[6].description;
+        document.getElementById('repositorioAtualizadoEm1').innerHTML = 'Atualizado em: ' + detalhes[6].updated_at;
         var urlRepositorio = document.getElementById('linkRepositorio1');
-        urlRepositorio.href = `${detalhes[4].html_url}`;
+        urlRepositorio.href = `${detalhes[6].html_url}`;
     }))   
 }
 
