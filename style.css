@@ -284,6 +284,11 @@ p {
     margin-right: auto;
 }
 
+#divIcones {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .social-icon:hover {
     background-color: rgb(10, 10, 255);
     color: #ffffff;
