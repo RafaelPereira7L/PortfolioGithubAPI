@@ -567,8 +567,8 @@ iframe {
     }
 
     .divIcones {
-        display: flex;
         align-items: center;
+        display: flex;
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
