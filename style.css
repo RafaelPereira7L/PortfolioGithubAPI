@@ -266,14 +266,22 @@ p {
     display: inline-block;
     text-align: center;
     width: 35px;
-    margin-left: 6px;
-    justify-content: space-between;
+    margin-left: 10px;
+    justify-content: space-evenly;
     border-radius: 20%;
     transition: all .1s ease-in-out;
     text-decoration: none;
     font-size: 120%;
     background-color: lightgray;
     color: #ffffff;
+}
+
+.divIcones {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .social-icon:hover {
@@ -559,8 +567,19 @@ iframe {
     }
 
     .divIcones {
-        margin-left: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
     }
+
+    #voltar-topo {
+        position: fixed;
+        bottom: 50px;
+        right: 10px;
+    }
+
     .lirec3 {
         width: 90%;
     }
