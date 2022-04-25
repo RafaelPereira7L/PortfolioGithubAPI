@@ -38,11 +38,11 @@ function buscarRepositorios() {
     fetch(`https://api.github.com/users/${usuario}/repos`)
     .then(response => response.json().then(detalhes => {
         console.log(detalhes)
-        document.getElementById('nomeRepositorio1').innerHTML = detalhes[8].name;
-        document.getElementById('descricaoRepositorio1').innerHTML = 'Descrição: ' + detalhes[8].description;
-        document.getElementById('repositorioAtualizadoEm1').innerHTML = 'Atualizado em: ' + detalhes[8].updated_at;
+        document.getElementById('nomeRepositorio1').innerHTML = detalhes[7].name;
+        document.getElementById('descricaoRepositorio1').innerHTML = 'Descrição: ' + detalhes[7].description;
+        document.getElementById('repositorioAtualizadoEm1').innerHTML = 'Atualizado em: ' + detalhes[7].updated_at;
         var urlRepositorio = document.getElementById('linkRepositorio1');
-        urlRepositorio.href = `${detalhes[8].html_url}`;
+        urlRepositorio.href = `${detalhes[7].html_url}`;
     }))   
 }
 
