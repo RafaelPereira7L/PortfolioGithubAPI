@@ -17,32 +17,32 @@ function buscarRepositorios() {
     fetch(`https://api.github.com/users/${usuario}/repos`)
         .then(response => response.json().then(detalhes => {
             console.log(detalhes)
-            document.getElementById('nomeRepositorio').innerHTML = detalhes[2].name;
-            document.getElementById('descricaoRepositorio').innerHTML = 'Descrição: ' + detalhes[2].description;
-            document.getElementById('repositorioAtualizadoEm').innerHTML = 'Atualizado em: ' + detalhes[2].updated_at;
+            document.getElementById('nomeRepositorio').innerHTML = detalhes[3].name;
+            document.getElementById('descricaoRepositorio').innerHTML = 'Descrição: ' + detalhes[3].description;
+            document.getElementById('repositorioAtualizadoEm').innerHTML = 'Atualizado em: ' + detalhes[3].updated_at;
             var urlRepositorio = document.getElementById('linkRepositorio');
-            urlRepositorio.href = `${detalhes[2].html_url}`;
+            urlRepositorio.href = `${detalhes[3].html_url}`;
         }))
 
 
     fetch(`https://api.github.com/users/${usuario}/repos`)
         .then(response => response.json().then(detalhes => {
             console.log(detalhes)
-            document.getElementById('nomeRepositorio2').innerHTML = detalhes[1].name;
-            document.getElementById('descricaoRepositorio2').innerHTML = 'Descrição: ' + detalhes[1].description;
-            document.getElementById('repositorioAtualizadoEm2').innerHTML = 'Atualizado em: ' + detalhes[1].updated_at;
+            document.getElementById('nomeRepositorio2').innerHTML = detalhes[5].name;
+            document.getElementById('descricaoRepositorio2').innerHTML = 'Descrição: ' + detalhes[5].description;
+            document.getElementById('repositorioAtualizadoEm2').innerHTML = 'Atualizado em: ' + detalhes[5].updated_at;
             var urlRepositorio = document.getElementById('linkRepositorio2');
-            urlRepositorio.href = `${detalhes[1].html_url}`;
+            urlRepositorio.href = `${detalhes[5].html_url}`;
         }))
 
     fetch(`https://api.github.com/users/${usuario}/repos`)
     .then(response => response.json().then(detalhes => {
         console.log(detalhes)
-        document.getElementById('nomeRepositorio1').innerHTML = detalhes[6].name;
-        document.getElementById('descricaoRepositorio1').innerHTML = 'Descrição: ' + detalhes[6].description;
-        document.getElementById('repositorioAtualizadoEm1').innerHTML = 'Atualizado em: ' + detalhes[6].updated_at;
+        document.getElementById('nomeRepositorio1').innerHTML = detalhes[8].name;
+        document.getElementById('descricaoRepositorio1').innerHTML = 'Descrição: ' + detalhes[8].description;
+        document.getElementById('repositorioAtualizadoEm1').innerHTML = 'Atualizado em: ' + detalhes[8].updated_at;
         var urlRepositorio = document.getElementById('linkRepositorio1');
-        urlRepositorio.href = `${detalhes[6].html_url}`;
+        urlRepositorio.href = `${detalhes[8].html_url}`;
     }))   
 }
 
