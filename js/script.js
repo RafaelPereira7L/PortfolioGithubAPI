@@ -28,21 +28,21 @@ function buscarRepositorios() {
     fetch(`https://api.github.com/users/${usuario}/repos`)
         .then(response => response.json().then(detalhes => {
             console.log(detalhes)
-            document.getElementById('nomeRepositorio2').innerHTML = detalhes[2].name;
-            document.getElementById('descricaoRepositorio2').innerHTML = 'Descrição: ' + detalhes[2].description;
-            document.getElementById('repositorioAtualizadoEm2').innerHTML = 'Atualizado em: ' + detalhes[2].updated_at;
+            document.getElementById('nomeRepositorio2').innerHTML = detalhes[1].name;
+            document.getElementById('descricaoRepositorio2').innerHTML = 'Descrição: ' + detalhes[1].description;
+            document.getElementById('repositorioAtualizadoEm2').innerHTML = 'Atualizado em: ' + detalhes[1].updated_at;
             var urlRepositorio = document.getElementById('linkRepositorio2');
-            urlRepositorio.href = `${detalhes[2].html_url}`;
+            urlRepositorio.href = `${detalhes[1].html_url}`;
         }))
 
     fetch(`https://api.github.com/users/${usuario}/repos`)
     .then(response => response.json().then(detalhes => {
         console.log(detalhes)
-        document.getElementById('nomeRepositorio1').innerHTML = detalhes[7].name;
-        document.getElementById('descricaoRepositorio1').innerHTML = 'Descrição: ' + detalhes[7].description;
-        document.getElementById('repositorioAtualizadoEm1').innerHTML = 'Atualizado em: ' + detalhes[7].updated_at;
+        document.getElementById('nomeRepositorio1').innerHTML = detalhes[3].name;
+        document.getElementById('descricaoRepositorio1').innerHTML = 'Descrição: ' + detalhes[3].description;
+        document.getElementById('repositorioAtualizadoEm1').innerHTML = 'Atualizado em: ' + detalhes[3].updated_at;
         var urlRepositorio = document.getElementById('linkRepositorio1');
-        urlRepositorio.href = `${detalhes[7].html_url}`;
+        urlRepositorio.href = `${detalhes[3].html_url}`;
     }))   
 }
 
